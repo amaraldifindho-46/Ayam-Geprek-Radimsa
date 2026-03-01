@@ -13,11 +13,23 @@
 
     
 <nav class="navbar navbar-dark bg-dark bg-success sticky-top px-3">
-    <div class="container-fluid"> 
+    <div class="d-flex align-items-center"> 
+
+        <button class=" btn btn-success me-2" onclick="togglemenu()"> ☰ </button>
         <span class="navbar-brand mb-0 h5">Ayam Geprek Radimsa</span>
-        <small class="text-white">Buka • Ayam & Menu lainnya</small>
     </div> 
 </nav> 
+
+<div id="navMenu" class="bg-light border p-2" style="display: none;">
+    <button class="btn btn-link w-100 text-start" onclick="showDashboard()"> Dashboard</button>
+    <button class="btn btn-link w-100 text-start" onclick="showMenu()"> Menu & Harga</button>
+</div>
+
+<div id="dashboard" class="container mt-4">
+</div>
+
+<div id="menu" class="container mt-4" style="display: none;">
+</div>
 
  <div class="container my-4">
         <h3 class="text-center mb-3">Pesan Sekarang</h3>
