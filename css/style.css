@@ -27,7 +27,7 @@ body {
 }
 
 .navbar {
-    background-color: var(--secondary-color) !important;
+    background-color: var(--secondary-color);
 }
 
 h1, h2, h3 {
@@ -141,3 +141,4 @@ h1, h2, h3 {
     from {opacity: 0; transform: translateY(-5px);} 
     to {opacity: 1; transform: translateY(0);}
 }
+
