@@ -185,5 +185,28 @@ referrerpolicy="no-referrer-when-downgrade">
     📞
 </a>
 
+<script>
+    function togglemenu() {
+        const menu = document.getElementById("navMenu");
+        menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+    function showDashboard() {
+        document.getElementById("dashboard").style.display = "block";
+
+        document.getElementById("menu").style.display = "none";
+
+        document.getElementById("navMenu").style.display = "none";
+    }
+
+    function showMenu() {
+        document.getElementById("dashboard").style.display = "none";
+
+        document.getElementById("menu").style.display = "block";
+
+        document.getElementById("navMenu").style.display = "none";
+
+    }
+</script>
 </body>
 </html> 
