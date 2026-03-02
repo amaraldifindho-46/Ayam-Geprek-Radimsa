@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Ayam Geprek Radimsa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -13,11 +14,8 @@
 
     
 <nav class="navbar navbar-dark bg-dark bg-success sticky-top px-3">
-    <div class="d-flex align-items-center"> 
-
-        <button class=" btn btn-success me-2" onclick="togglemenu()">☰</button>
+        <button class=" btn btn-success me-2" onclick="toggleMenu()">☰</button>
         <span class="navbar-brand mb-0 h5">Ayam Geprek Radimsa</span>
-    </div> 
 </nav> 
 
 <div id="navMenu" class="bg-light border p-2" style="display: none;">
@@ -25,20 +23,11 @@
     <button class="btn btn-link w-100 text-start" onclick="showMenu()"> Menu & Harga</button>
 </div>
 
-<div id="dashboard" class="container mt-4">
-</div>
-
-<div id="menu" class="container mt-4" style="display: none;">
-</div>
-
 <section id="dashboard" class="container mt-4">
-    <h2 class="text-center mb-4">Selamat Datang di Ayam Geprek Radimsa!</h2>
+    <h3 class="text-center mb-4">Selamat Datang di Ayam Geprek Radimsa!</h3>
     <p class="text-center">Ayam Geprek Radimsa berdiri sejak 2024 dan kami akan menyajikan masakan dan makanan yang berkualtas, higienis, dan sehat dengan cita rasa yang nikmati kelezatan ayam geprek dengan sambal pedas yang menggugah selera, serta nikamti kelezatan menu-menu lain nya yang tersedia di Resto kami. Pesan sekarang dan rasakan sensasi pedas nikmat yang luar biasa!</p>
 
  <div class="container my-4">
-        <h3 class="text-center mb-3">Pesan Sekarang</h3>
-    
-    <div class="text-center">
         <a href="https://wa.me/6288276790180?text=Halo%20saya%20mau%20order"
             target="_blank"
             class="btn btn-success mb-2">📱 Order via Whatsapp</a>
@@ -50,17 +39,12 @@
         <a href="https://gofood.link/a/N4itCh5"
             target="_blank"
             class="btn btn-danger">📱 Order via Gofood</a>
-    </div>
 </div>
-
-<button class="btn btn-success mt-3" onclick="showMenu()">Menu & Harga</button>
 </section>
 
 <section id="menu" class="container mt-4" style="display: none;">
-    <h4 class="text-center mb-3">Menu & Harga</h4> 
-    
-    <div class="row g-3 mt-2"> 
-        
+    <h3 class="text-center mb-3">Menu & Harga</h3> 
+         
         <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="card h-100">
                 <img src="img/ayam_geprek.jpg" class="card-img-top" alt="Ayam Geprek"> 
@@ -140,9 +124,6 @@
                 </div>         
             </div>
         </div>
-
-    </div>
-</div>
 </section>
 
 <div class="container my-5">
@@ -186,9 +167,9 @@ referrerpolicy="no-referrer-when-downgrade">
 </a>
 
 <script>
-    function togglemenu() {
-        const menu = document.getElementById("navMenu");
-        menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    function toggleMenu() {
+        const nav = document.getElementById("navMenu");
+        nav.style.display = (nav.style.display === "block") ? "none" : "block";
     }
 
     function showDashboard() {
@@ -209,6 +190,3 @@ referrerpolicy="no-referrer-when-downgrade">
 </script>
 </body>
 </html> 
-
-
-
