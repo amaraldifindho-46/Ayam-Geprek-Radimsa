@@ -192,7 +192,11 @@ referrerpolicy="no-referrer-when-downgrade">
 
         document.getElementById("menu").style.display = "none";
 
+        document.getElementById("menuDetail").style.display = "none";
+
         document.getElementById("navMenu").style.display = "none";
+
+         window.scrollTo(0,0);
     }
 
     function showMenu() {
@@ -200,7 +204,11 @@ referrerpolicy="no-referrer-when-downgrade">
 
         document.getElementById("menu").style.display = "block";
 
+        document.getElementById("menuDetail").style.display = "none";
+
         document.getElementById("navMenu").style.display = "none";
+
+        window.scrollTo(0,0);
     }
 
 </script>
@@ -276,9 +284,10 @@ if(menu==="tetelan"){
 
         document.getElementById("menuDetail").style.display="none";
         document.getElementById("menu").style.display="block";
-
+        window.scrollTo(0,0);
 }
 </script>
 
 </body>
 </html> 
+
