@@ -185,45 +185,33 @@
 </a>
 
 <script>
-    function toggleMenu() {
-        const nav = document.getElementById("navMenu");
-        nav.style.display = (nav.style.display === "block") ? "none" : "block";
+
+function toggleMenu(){
+const nav=document.getElementById("navMenu");
+nav.style.display=(nav.style.display==="block")?"none":"block";
 }
 
-    function changePage(target){
-        const pages = document.querySelectorAll(".page");
-        pages.forEach(page => {
-
-        if(page.classList.contains("active")){
-        page.classList.remove("active");
-        page.classList.add("exit");
-
-        setTimeout(()=>{
-        page.classList.remove("exit");
-        },500);
-
-}
-});
-        document.getElementById(target).classList.add("active");
-
+function showDashboard(){
+document.getElementById("dashboard").style.display="block";
+document.getElementById("menu").style.display="none";
+document.getElementById("menuDetail").style.display="none";
+document.getElementById("navMenu").style.display="none";
 }
 
-    function showDashboard(){
-        changePage("dashboard");
-        document.getElementById("navMenu").style.display="none";
+function showMenu(){
+document.getElementById("dashboard").style.display="none";
+document.getElementById("menu").style.display="block";
+document.getElementById("menuDetail").style.display="none";
+document.getElementById("navMenu").style.display="none";
 }
 
-    function showMenu(){
-        changePage("menu");
-        document.getElementById("navMenu").style.display="none";
-}
-</script>
+function showDetail(menu){
 
-<script>
-    function showDetail(menu){
-changePage("menuDetail");
+document.getElementById("menu").style.display="none";
+document.getElementById("menuDetail").style.display="block";
 
 const data={
+
 ayam:{
 title:"Ayam Geprek",
 price:"Rp 10.000",
@@ -270,11 +258,19 @@ document.getElementById("detailDesc").innerText=item.desc;
 document.getElementById("detailImage").src=item.img;
 document.getElementById("detailShopee").href=item.shopee;
 document.getElementById("detailGofood").href=item.gofood;
+
 }
+
+function backToMenu(){
+document.getElementById("menuDetail").style.display="none";
+document.getElementById("menu").style.display="block";
+}
+
 </script>
 
 </body>
 </html> 
+
 
 
 
