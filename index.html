@@ -185,7 +185,6 @@
 </a>
 
 <script>
-
 function toggleMenu(){
 const nav=document.getElementById("navMenu");
 nav.style.display=(nav.style.display==="block")?"none":"block";
@@ -207,6 +206,7 @@ document.getElementById("navMenu").style.display="none";
 
 function showDetail(menu){
 
+document.getElementById("dashboard").style.display="none";
 document.getElementById("menu").style.display="none";
 document.getElementById("menuDetail").style.display="block";
 
@@ -266,10 +266,14 @@ document.getElementById("menuDetail").style.display="none";
 document.getElementById("menu").style.display="block";
 }
 
+window.onload=function(){
+document.getElementById("menu").style.display="none";
+document.getElementById("menuDetail").style.display="none";
+}
 </script>
-
 </body>
 </html> 
+
 
 
 
