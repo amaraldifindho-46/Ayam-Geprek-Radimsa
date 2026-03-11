@@ -136,22 +136,5 @@ h1, h2, h3 {
 
 #detailPrice{
     font-size:28px;
-    color: #2e7d32;
+    color:#2e7d32;
 }
-
-
-/* container halaman */
-.page{
-    display:none;
-}
-
-/* halaman aktif */
-.page.active{
-    display:block;
-}
-
-/* supaya tidak muncul scroll saat slide */
-body{
-    overflow-x:hidden;
-}
-
